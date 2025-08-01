@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Perusahaan</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="profil.html">Tentang Kami</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h1 id="greeting">Hai, M. Arif Rizqi Ananda</h1>
+    <input type="text" id="username" placeholder="Masukkan Nama">
+    <button onclick="updateGreeting()">Kirim</button>
+
+    <section class="form-section">
+      <h2>Kirim Pesan</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Nama" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <textarea id="message" placeholder="Masukkan Pesan" required></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+      <div id="formResult"></div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
